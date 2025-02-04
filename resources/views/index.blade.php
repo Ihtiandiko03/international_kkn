@@ -4,10 +4,40 @@
     <section id="beranda" class="hero-section" style="background-image: url(https://masuk-ptn.com/images/product/368b1d936cf9be5ef1d7c936bc793c306655880f.jpg)">
         <div class="container text-center text-dark" style="margin-top: -100px;">
             <h1 class="display-3 mb-5">Developing Educotourism Villages for Climate Change Mitigation</h1>
-            {{-- <p class="lead mb-4">Developing Educotourism Villages for Climate Change Mitigation</p> --}}
             <a href="/registration" class="btn btn-danger btn-lg" style="margin-top: 100px;">Register Now</a>
         </div>
     </section>
+
+    {{-- <section id="beranda" class="hero-section">
+        <div id="heroCarousel" class="container carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://masuk-ptn.com/images/product/368b1d936cf9be5ef1d7c936bc793c306655880f.jpg" class="d-block w-100" alt="Image 1" style="height: 100vh; width: height: 100vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.itera.ac.id/wp-content/uploads/2020/01/3.jpg" class="d-block w-100" alt="Image 2" style="height: 100vh; width: height: 100vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.itera.ac.id/wp-content/uploads/2024/02/Gerbang-ITERA-Drone-2.jpg" class="d-block w-100" alt="Image 3" style="height: 100vh; width: height: 100vh; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://itrc.itera.ac.id/storage/Assets/Profil.jpeg" class="d-block w-100" alt="Image 4" style="height: 100vh; width: height: 100vh; object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container text-center text-dark" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <h1 class="display-3 mb-5">Developing Educotourism Villages for Climate Change Mitigation</h1>
+            <a href="/registration" class="btn btn-danger btn-lg" style="margin-top: 100px;">Register Now</a>
+        </div>
+    </section> --}}
 
     <!-- Tentang Section -->
     <section id="tentang" class="py-5">
