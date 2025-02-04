@@ -5,7 +5,7 @@
         <div class="container text-center text-dark" style="margin-top: -100px;">
             <h1 class="display-3 mb-5">Developing Educotourism Villages for Climate Change Mitigation</h1>
             {{-- <p class="lead mb-4">Developing Educotourism Villages for Climate Change Mitigation</p> --}}
-            <a href="#daftar" class="btn btn-danger btn-lg" style="margin-top: 100px;">Register Now</a>
+            <a href="/registration" class="btn btn-danger btn-lg" style="margin-top: 100px;">Register Now</a>
         </div>
     </section>
 

@@ -169,11 +169,17 @@
                     <li class="nav-item"><a class="nav-link" href="/struktur">Committees</a></li>
                     <li class="nav-item"><a class="nav-link" href="#kontak">Announcement</a></li>
                     <li class="nav-item"><a class="nav-link" href="#timeline">Sponsorship</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/registration">Registration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
 
     @yield('container')
 

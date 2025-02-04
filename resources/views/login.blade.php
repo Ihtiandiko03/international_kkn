@@ -2,10 +2,30 @@
 @section('container')
 <div class="container my-5">
     <div class="row justify-content-center">
-        <div class="col-md-8 registration-container">
-            <h2 class="text-center mb-4">International KKN Registration</h2>
+        <div class="col-md-8 registration-container mb-5">
+            <div class="text-center">
+                <img src="https://kkn.itera.ac.id/wp-content/uploads/2022/04/Logo-IG.png" class="mx-auto" alt="" width="200">
+            </div>
+            <h2 class="text-center mb-4">International KKN Login</h2>
+
+            <div class="">
+                <form action="" method="POST">
+                    @csrf
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-danger">Login</button>
+                    </div>
+                </form>
+            </div>
             
-            <!-- Step Indicator -->
+            {{-- <!-- Step Indicator -->
             <div class="step-indicator">
                 <div class="step active" data-step="1">Personal Information</div>
                 <div class="step" data-step="2">Academic Information</div>
@@ -179,7 +199,7 @@
                         <button type="submit" class="btn btn-success">Submit Registration</button>
                     </div>
                 </div>
-            </form>
+            </form> --}}
         </div>
     </div>
 </div>
