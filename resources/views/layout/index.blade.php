@@ -167,7 +167,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/struktur">Committees</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#kontak">Announcement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pengumuman">Announcement</a></li>
                     <li class="nav-item"><a class="nav-link" href="#timeline">Sponsorship</a></li>
                     <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
                 </ul>

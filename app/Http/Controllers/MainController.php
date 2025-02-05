@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Pengumuman;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -59,5 +60,10 @@ class MainController extends Controller
 
     public function login(){
         return view('login');
+    }
+
+    public function pengumuman(){
+        $pengumuman = Pengumuman::where('is_deleted', 0)->get();
+        return view('pengumuman', compact('pengumuman'));
     }
 }
