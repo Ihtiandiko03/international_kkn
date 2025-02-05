@@ -1,10 +1,16 @@
 @extends('layout.index')
 
 @section('container')
+<section class="bg-danger text-white text-center py-5 mt-5">
+    <div class="container">
+        <h1 class="display-4">Announcements</h1>
+        <p class="lead">Announcements about International KKN</p>
+    </div>
+</section>
 <div class="container mt-5">
     <div class="row">
         <div class="col-12">
-            <h1 class="text-center mb-4 mt-5">Announcements</h1>
+            <h1 class="text-center mb-4 mt-5"></h1>
             @foreach($pengumuman as $item)
             <div class="card mb-3">
                 <div class="card-body">
