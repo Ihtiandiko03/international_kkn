@@ -2639,7 +2639,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.page-header[filter-color="orange"] {
+.page-header[filter-color="red"] {
   background: rgba(44, 44, 44, 0.2);
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
@@ -3665,11 +3665,15 @@ Created using IcoMoon - icomoon.io
   padding-bottom: 0;
 }
 
-.table>thead>tr>th {
+/* .table>thead>tr>th {
   border-bottom-width: 1px;
   font-size: 1.45em;
   font-weight: 300;
   border: 0;
+} */
+.table>thead>tr>th {
+  border-bottom-width: 1px;
+  color: #000
 }
 
 .table .radio,
@@ -3915,7 +3919,7 @@ Created using IcoMoon - icomoon.io
 
 .sidebar .nav li.active>a,
 .off-canvas-sidebar .nav li.active>a {
-  background-color: #FFFFFF;
+  background-color: #000;
   box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
 }
 
@@ -4100,18 +4104,18 @@ Created using IcoMoon - icomoon.io
   color: #18ce0f;
 }
 
-.sidebar[data-color="orange"]:after,
-.off-canvas-sidebar[data-color="orange"]:after {
+.sidebar[data-color="red"]:after,
+.off-canvas-sidebar[data-color="red"]:after {
   background: #f96332;
 }
 
-.sidebar[data-color="orange"] .nav li.active>a:not([data-toggle="collapse"]),
-.off-canvas-sidebar[data-color="orange"] .nav li.active>a:not([data-toggle="collapse"]) {
+.sidebar[data-color="red"] .nav li.active>a:not([data-toggle="collapse"]),
+.off-canvas-sidebar[data-color="red"] .nav li.active>a:not([data-toggle="collapse"]) {
   color: #f96332;
 }
 
-.sidebar[data-color="orange"] .nav li.active>a:not([data-toggle="collapse"]) i,
-.off-canvas-sidebar[data-color="orange"] .nav li.active>a:not([data-toggle="collapse"]) i {
+.sidebar[data-color="red"] .nav li.active>a:not([data-toggle="collapse"]) i,
+.off-canvas-sidebar[data-color="red"] .nav li.active>a:not([data-toggle="collapse"]) i {
   color: #f96332;
 }
 
@@ -4385,7 +4389,7 @@ Created using IcoMoon - icomoon.io
   background-color: #18ce0f;
 }
 
-.fixed-plugin .badge-orange {
+.fixed-plugin .badge-red {
   background-color: #f96332;
 }
 
@@ -4639,15 +4643,15 @@ Created using IcoMoon - icomoon.io
   height: 400px;
 }
 
-.card[data-background-color="orange"] {
+.card[data-background-color="red"] {
   background-color: #f96332;
 }
 
-.card[data-background-color="orange"] .card-header {
+.card[data-background-color="red"] .card-header {
   background-color: #f96332;
 }
 
-.card[data-background-color="orange"] .card-footer .stats {
+.card[data-background-color="red"] .card-footer .stats {
   color: #FFFFFF;
 }
 

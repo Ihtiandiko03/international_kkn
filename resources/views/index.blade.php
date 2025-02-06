@@ -82,17 +82,25 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="country-card card" style="position: relative;">
-                        <img src="https://i.pinimg.com/736x/83/89/52/83895264750bf768114d2c65459641db.jpg" class="card-img-top" width="300" height="300">
+                        <img src="https://i.pinimg.com/736x/6c/8c/7b/6c8c7b2e3d5d30d59b505bd98f4332e7.jpg" class="card-img-top" width="300" height="300">
                         <div class="card-img-overlay" style="position: absolute; top: 55%; left: 53%; transform: translate(-50%, -50%); color: white; text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);">
-                            <h5 class="card-title" style="font-size: 24pt;">South Korea</h5>
+                            <h5 class="card-title" style="font-size: 18pt;">Indonesia</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="country-card card" style="position: relative;">
-                        <img src="https://i.pinimg.com/736x/05/75/f3/0575f3bfaa462f53b86f34a0d259be9d.jpg" class="card-img-top" width="300" height="300">
+                        <img src="https://i.pinimg.com/736x/83/89/52/83895264750bf768114d2c65459641db.jpg" class="card-img-top" width="300" height="300">
                         <div class="card-img-overlay" style="position: absolute; top: 55%; left: 53%; transform: translate(-50%, -50%); color: white; text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);">
-                            <h5 class="card-title" style="font-size: 24pt;">China</h5>
+                            <h5 class="card-title" style="font-size: 20pt;">South Korea</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="country-card card" style="position: relative;">
+                        <img src="https://i.pinimg.com/736x/d5/10/de/d510de87732bdba1e90740498fc0f6c9.jpg" class="card-img-top" width="300" height="300">
+                        <div class="card-img-overlay" style="position: absolute; top: 55%; left: 53%; transform: translate(-50%, -50%); color: white; text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);">
+                            <h5 class="card-title" style="font-size: 20pt;">China</h5>
                         </div>
                     </div>
                 </div>
@@ -100,7 +108,7 @@
                     <div class="country-card card" style="position: relative;">
                         <img src="https://i.pinimg.com/736x/2e/1a/93/2e1a93a0250c4a768b82e708b53e7364.jpg" class="card-img-top" width="300" height="300">
                         <div class="card-img-overlay" style="position: absolute; top: 55%; left: 53%; transform: translate(-50%, -50%); color: white; text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);">
-                            <h5 class="card-title" style="font-size: 21pt;">Malaysia</h5>
+                            <h5 class="card-title" style="font-size: 20pt;">Malaysia</h5>
                         </div>
                     </div>
                 </div>
@@ -108,7 +116,7 @@
                     <div class="country-card card" style="position: relative;">
                         <img src="https://i.pinimg.com/736x/bd/94/e5/bd94e5bde8c80b999a8091b0919b4baa.jpg" class="card-img-top" width="300" height="300">
                         <div class="card-img-overlay" style="position: absolute; top: 55%; left: 53%; transform: translate(-50%, -50%); color: white; text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);">
-                            <h5 class="card-title" style="font-size: 24pt;">Japan</h5>
+                            <h5 class="card-title" style="font-size: 20pt;">Japan</h5>
                         </div>
                     </div>
                 </div>
@@ -164,27 +172,94 @@
             <div class="row">
                 <div class="col-md-8 mx-auto">
                     <div class="timeline-item">
-                        <h4>Registration</h4>
-                        <p>March 1 - April 30, 2025</p>
+                        <h4>Online International KKN</h4>
+                        <p>June 2 - July 14, 2025</p>
                     </div>
                     <div class="timeline-item">
-                        <h4>Selection and Interview</h4>
-                        <p>May 1 - 15, 2025</p>
+                        <h4>Arrival of KKN participants Together International 2025</h4>
+                        <p>July 20, 2025</p>
                     </div>
                     <div class="timeline-item">
-                        <h4>Announcement</h4>
-                        <p>May 20, 2025</p>
+                        <h4>Departure and Release of the 2025 International Joint KKN</h4>
+                        <p>July 21, 2025</p>
                     </div>
                     <div class="timeline-item">
-                        <h4>Orientation</h4>
-                        <p>June 1 - 30, 2025</p>
+                        <h4>Implementation of Joint International KKN 2025</h4>
+                        <p>July 21 - August 21, 2025</p>
                     </div>
                     <div class="timeline-item">
-                        <h4>Program Implementation</h4>
-                        <p>July - August 2025</p>
+                        <h4>2025 International Joint KKN Pick-up</h4>
+                        <p>August 21, 2025</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2025 International Joint KKN Results Expo and Festival</h4>
+                        <p>August 22, 2025</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Return of KKN participants Together International 2025</h4>
+                        <p>August 23, 2024</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="negara" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Location of International KKN 2025</h2>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="" style="position: relative;">
+                        <img src="https://i.pinimg.com/736x/83/5f/f7/835ff715a2d628d1f5e4f6d03873a07c.jpg"  class="card-img-top" style="width: 400px; height: 400px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Pahawang Village, Pesawaran Regency</h2>
+                        <p>Pahawang Village is a village potential in develop Marine product SMEs. The tourism potential 
+                           of Pahawang Village includes coral reef conservation and mangrove planting. Tourist destinationssea walker
+                           Pahawang Island. Marine Conservation in the Waters of Jelarangan Hamlet, Pahawang Island.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Girimulyo Village, East Lampung Regency</h2>
+                        <p>Natural habitat for pollen-eating bats. Cultivation of Siger Avocado, one of Lampung's 
+                            superior butter avocado varieties and famous 
+                            throughout Indonesia. In the form of terraced pyramids, bathing pools or baths, 
+                            sundials or seasonal calendars, and fortress moats. Buddha-Avalokitesvara statue, porcelain plates, and 
+                            beads estimated to be from the Srivijaya Kingdom era. The terraced pyramids and megalithic statues are thought 
+                            to be from the old megalithic period (pre-Buddhist era).
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="position: relative; float: right;">
+                        <img src="https://i.pinimg.com/736x/d0/be/5a/d0be5a1625a28d6d9ffbc9f67c36769f.jpg" class="card-img-top" style="width: 400px; height: 400px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="" style="position: relative;">
+                        <img src="https://i.pinimg.com/736x/97/55/be/9755be30cd3b9fdd4ef51bc17b92dd0c.jpg"  class="card-img-top" style="width: 400px; height: 400px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Way Kambas Village, East Lampung Regency</h2>
+                        <p>Way Kambas National Park, located in Lampung, Indonesia, is renowned for its efforts in wildlife conservation, particularly for the endangered Sumatran elephants and rhinoceroses. The park spans over 1,300 square kilometers and is a sanctuary for various species of flora and fauna. 
+                            The park's conservation initiatives include the optimization of conservation-based nature tourism, which aims to educate visitors about the importance of preserving natural habitats while providing a sustainable source of income for local communities. 
+                            One of the key projects in Way Kambas is the utilization of manure as biogas and fertilizer. This initiative not only helps in managing waste but also provides a renewable source of energy and organic fertilizer for agricultural purposes. 
+                            Additionally, the park focuses on integrated grass cultivation specifically for elephant feed. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 @endsection

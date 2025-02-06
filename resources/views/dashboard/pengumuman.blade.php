@@ -8,7 +8,7 @@
                 <h3 class="card-title"> Announcement </h3>
               </div>
               <div class="card-body">
-                <a href="{{ route('pengumuman.create') }}" class="btn btn-primary mb-3">Create Announcement</a>
+                <a href="{{ route('pengumuman.create') }}" class="btn btn-secondary mb-3">Create Announcement</a>
                 <div class="table-responsive">
                   <table class="table">
                     <thead class=" text-primary">

@@ -25,21 +25,23 @@
                 <div class="form-step active" data-step="1">
                     <h4 class="mb-4">Personal Information</h4>
                     <div class="row">
-                        <div class="col-md mb-3">
+                        <div class="col-md-6 mb-3">
                             <label class="form-label">Full Name</label>
                             <input type="text" class="form-control" name="nama" required>
                         </div>
-                        
-                    </div>
-                    <div class="row">
+
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Email</label>
                             <input type="email" class="form-control" name="email" required>
                         </div>
-                        <div class="col-md-6 mb-3">
+                        
+                    </div>
+                    <div class="row">
+                        
+                        {{-- <div class="col-md-6 mb-3">
                             <label class="form-label">Password</label>
                             <input type="password" class="form-control" name="password" required>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">

@@ -15,6 +15,9 @@ class MainController extends Controller
     public function struktur(){
         return view('struktur');
     }
+    public function about(){
+        return view('about');
+    }
     public function registration(){
         return view('registration');
     }
@@ -22,7 +25,7 @@ class MainController extends Controller
         $request->validate([
             'nama' => 'required',
             'email' => 'required|email',
-            'password' => 'required|min:8',
+            // 'password' => 'required|min:8',
             'tempat_lahir' => 'required',
             'tanggal_lahir' => 'required',
             'jenis_kelamin' => 'required',
@@ -40,7 +43,8 @@ class MainController extends Controller
         $user = new User();
         $user->nama = $request->nama;
         $user->email = $request->email;
-        $user->password = Hash::make($request->password);
+        // $user->password = Hash::make($request->password);
+        $user->password = '12345';
         $user->tempat_lahir = $request->tempat_lahir;
         $user->tanggal_lahir = $request->tanggal_lahir;
         $user->jenis_kelamin = $request->jenis_kelamin;

@@ -119,4 +119,10 @@ class DashboardAdminController extends Controller
 
         return redirect()->route('pengumuman.index')->with('success', 'Pengumuman deleted successfully!');
     }
+
+    public function pendaftarKKN(){
+        $pendaftar = User::all();
+
+        return view('dashboard.pendaftarkkn', compact('pendaftar'));
+    }
 }

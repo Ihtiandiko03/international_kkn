@@ -20,20 +20,21 @@
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="{{ asset('assets/logo.ico') }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Now UI Dashboard by Creative Tim
+    Dashboard KKN International
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- CSS Files -->
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
+  {{-- <link href="../assets/css/bootstrap.min.css" rel="stylesheet" /> --}}
+  <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" />
+  <link href="{{ asset('assets/css/now-ui-dashboard.css?v=1.5.0') }}" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <link href="{{ asset('assets/demo/demo.css') }}" rel="stylesheet" />
 </head>
 
 <body class="">
@@ -49,19 +50,25 @@
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
-          <li class="active ">
+          <li class="{{ Request::is('dashboard') ? 'active' : '' }}">
             <a href="/dashboard">
-              <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
+                <i class="now-ui-icons design_app"></i>
+                <p>Dashboard</p>
             </a>
-          </li>
-          <li>
+        </li>
+        <li class="{{ Request::is('dashboard/pendaftar-kkn') ? 'active' : '' }}">
+            <a href="/dashboard/pendaftar-kkn">
+                <i class="now-ui-icons users_single-02"></i>
+                <p>KKN Registrant</p>
+            </a>
+        </li>
+        <li class="{{ Request::is('dashboard/pengumuman') ? 'active' : '' }}">
             <a href="/dashboard/pengumuman">
-              <i class="now-ui-icons education_atom"></i>
-              <p>Announcement</p>
+                <i class="now-ui-icons education_atom"></i>
+                <p>Announcement</p>
             </a>
-          </li>
-          <li>
+        </li>
+          {{-- <li>
             <a href="/icons">
               <i class="now-ui-icons education_atom"></i>
               <p>Icons</p>
@@ -102,7 +109,7 @@
               <i class="now-ui-icons arrows-1_cloud-download-93"></i>
               <p>Upgrade to PRO</p>
             </a>
-          </li>
+          </li> --}}
         </ul>
       </div>
     </div>
@@ -144,7 +151,7 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Logout</a>
+                  <a class="dropdown-item" href="/">Logout</a>
                   {{-- <a class="dropdown-item" href="#">Another action</a>
                   <a class="dropdown-item" href="#">Something else here</a> --}}
                 </div>
@@ -222,6 +229,40 @@
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
+
+  <!-- Include DataTables CSS and JS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<!-- Include DataTables Buttons extension CSS and JS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.1.0/css/buttons.bootstrap5.min.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.1.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.1.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.1.0/js/buttons.bootstrap5.min.js"></script>
+
+<!-- Initialize DataTable with Buttons -->
+<script>
+    $(document).ready(function() {
+        $('#registrantTable').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+                // 'pdfHtml5'
+            ],
+            responsive: true,
+            language: {
+                paginate: {
+                    previous: "<i class='fas fa-angle-left'></i>",
+                    next: "<i class='fas fa-angle-right'></i>"
+                }
+            }
+        });
+    });
+</script>
+
   <script>
     function previewImage(event) {
         var reader = new FileReader();

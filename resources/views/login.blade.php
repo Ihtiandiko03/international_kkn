@@ -20,7 +20,8 @@
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-danger">Login</button>
+                        {{-- <button type="submit" class="btn btn-danger">Login</button> --}}
+                        <a href="/dashboard" class="btn btn-danger">Login</a>
                     </div>
                 </form>
             </div>
