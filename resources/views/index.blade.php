@@ -1,12 +1,99 @@
 @extends('layout.index')
 @section('container')
     <!-- Hero Section -->
-    <section id="beranda" class="hero-section" style="background-image: url(https://masuk-ptn.com/images/product/368b1d936cf9be5ef1d7c936bc793c306655880f.jpg)">
+    {{-- <section id="beranda" class="hero-section" style="background-image: url(https://masuk-ptn.com/images/product/368b1d936cf9be5ef1d7c936bc793c306655880f.jpg)">
         <div class="container text-center text-dark" style="margin-top: -100px;">
             <h1 class="display-3 mb-5">Developing Educotourism Villages for Climate Change Mitigation</h1>
             <a href="/registration" class="btn btn-danger btn-lg" style="margin-top: 100px;">Register Now</a>
         </div>
+    </section> --}}
+    <section id="beranda" class="hero-section">
+        <div class="video-background">
+            <!-- YouTube video container -->
+            <div id="youtube-player"></div>
+            <!-- Overlay to ensure text remains readable -->
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="container text-center position-relative">
+            <h1 class="display-3 mb-5 text-white">Developing Educotourism Villages for Climate Change Mitigation</h1>
+            <a href="/registration" class="btn btn-danger btn-lg">Register Now</a>
+        </div>
+
+        <style>
+            .hero-section {
+                position: relative;
+                height: 100vh;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .video-background {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                pointer-events: none; /* Prevents clicking the video */
+            }
+    
+            #youtube-player {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100vw;
+                height: 100vh;
+                transform: translate(-50%, -50%);
+                pointer-events: none;
+            }
+    
+            @media (min-aspect-ratio: 16/9) {
+                #youtube-player {
+                    height: 56.25vw;
+                }
+            }
+            
+            @media (max-aspect-ratio: 16/9) {
+                #youtube-player {
+                    width: 177.78vh;
+                }
+            }
+    
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+            }
+    
+            .hero-section .container {
+                z-index: 1;
+            }
+    
+            .hero-section h1 {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+    
+            .btn-danger {
+                padding: 15px 30px;
+                font-size: 1.25rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+    
+            .btn-danger:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            }
+        </style>
     </section>
+    
+        
 
     {{-- <section id="beranda" class="hero-section">
         <div id="heroCarousel" class="container carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -204,7 +291,7 @@
         </div>
     </section>
 
-    <section id="negara" class="py-5 bg-light">
+    {{-- <section id="negara" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Location of International KKN 2025</h2>
             <div class="row mt-5">
@@ -259,7 +346,87 @@
                 </div>
             </div>
         </div>
+    </section> --}}
+
+    <section id="sponsor" class="py-5 bg-light" >
+        <div class="container">
+            <h2 class="text-center mb-5">Our Sponsors</h2>
+            <div class="row justify-content-center align-items-center g-4">
+                @foreach ($sponsor as $s)
+                    <div class="col-6 col-md-3">
+                        <a href="{{$s->link_website}}" target="_blank" class="d-block text-center">
+                            <img src="{{ asset('storage/' . $s->image) }}" class="img-fluid" style="max-height: 100px; transition: transform 0.3s;">
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+        </div>
     </section>
+
+    <section id="negara" class="py-5 ">
+        <div class="container">
+            <h2 class="text-center mb-5">Location of International KKN 2025</h2>
+    
+            <!-- Pahawang Village -->
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div style="position: relative;">
+                        <img src="https://i.pinimg.com/736x/83/5f/f7/835ff715a2d628d1f5e4f6d03873a07c.jpg" class="card-img-top" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.010215124!2d105.105!3d-5.675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNDAnMzAiUyAxMDXCsDA2JzAwIkU!5e0!3m2!1sen!2sid!4v1700000000000" style="width: 100%; height: 300px; border-radius: 10px; margin-top: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Pahawang Village, Pesawaran Regency</h2>
+                        <p>Pahawang Village is a beautiful coastal village located in Pesawaran Regency, Lampung, Indonesia. Known for its stunning marine biodiversity, this village has become a popular destination for eco-tourism and marine conservation.
+                            One of the main attractions of Pahawang Village is Pahawang Island, which is famous for its crystal-clear waters, vibrant coral reefs, and diverse marine life. The island offers excellent opportunities for snorkeling, diving, and sea walking, allowing visitors to explore its underwater beauty up close.
+                            In addition to tourism, Pahawang Village has a strong potential in marine-based small and medium enterprises (SMEs). Many local communities engage in fishery-related businesses, including fish farming, seafood processing, and traditional fishing methods.
+                            Environmental conservation is also a key focus in Pahawang Village. The local community actively participates in coral reef restoration projects and mangrove reforestation, which help protect marine ecosystems and sustain biodiversity.
+                            With its breathtaking natural scenery, rich marine resources, and commitment to conservation, Pahawang Village is a must-visit destination for nature lovers and adventure seekers.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Girimulyo Village -->
+            <div class="row mt-5">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Girimulyo Village, East Lampung Regency</h2>
+                        <p>Girimulyo Village, located in East Lampung Regency, Indonesia, is a village rich in biodiversity, cultural heritage, and agricultural potential. This village is known as a natural habitat for pollen-eating bats, playing a crucial role in maintaining the ecological balance and supporting local ecosystems.
+                            One of the key agricultural products of Girimulyo is the Siger Avocado, a premium butter avocado variety native to Lampung. This avocado is highly valued for its creamy texture and rich flavor, making it popular across Indonesia.
+                            Girimulyo Village is also home to historical and archaeological sites, including terraced pyramid structures, ancient bathing pools, sundials, and fortress moats. These structures, along with megalithic statues and artifacts such as the Buddha-Avalokitesvara statue, porcelain plates, and beads, are believed to date back to the Srivijaya Kingdom era and the pre-Buddhist megalithic period.
+                            With its combination of natural beauty, historical significance, and agricultural excellence, Girimulyo Village is an important cultural and ecological destination in Lampung. It offers visitors a unique experience of nature, history, and sustainable farming practices in one location.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="position: relative; float: right;">
+                        <img src="https://i.pinimg.com/736x/d0/be/5a/d0be5a1625a28d6d9ffbc9f67c36769f.jpg" class="card-img-top" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.010215124!2d105.308!3d-5.301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMTcnNTQiUyAxMDXCsDE4JzI4IkU!5e0!3m2!1sen!2sid!4v1700000000000" style="width: 100%; height: 300px; border-radius: 10px; margin-top: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Way Kambas -->
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div style="position: relative;">
+                        <img src="https://i.pinimg.com/736x/97/55/be/9755be30cd3b9fdd4ef51bc17b92dd0c.jpg" class="card-img-top" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.010215124!2d105.645!3d-4.928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTUnNDYiUyAxMDXCsDM4JzQxIkU!5e0!3m2!1sen!2sid!4v1700000000000" style="width: 100%; height: 300px; border-radius: 10px; margin-top: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Way Kambas Village, East Lampung Regency</h2>
+                        <p>Way Kambas Village, located in East Lampung Regency, Indonesia, is best known for being home to Way Kambas National Park, one of Indonesia’s oldest and most important wildlife conservation areas. The park spans over 1,300 square kilometers and is dedicated to protecting endangered species, particularly the Sumatran elephant and Sumatran rhinoceros.
+                            The village and its surrounding areas play a crucial role in conservation-based eco-tourism, offering visitors a chance to experience the beauty of Lampung’s natural landscapes while learning about wildlife preservation efforts. Tourists can explore the Elephant Conservation Center (ECC), where elephants are rehabilitated and trained for conservation purposes.
+                            In addition to its wildlife protection efforts, Way Kambas Village promotes sustainable environmental practices. One of its key initiatives includes the utilization of elephant manure for biogas and organic fertilizer production, helping to manage waste while providing renewable energy for local communities. Another innovative project is integrated grass cultivation, which ensures a steady food supply for the elephants.
+                            With its rich biodiversity, conservation efforts, and commitment to sustainable development, Way Kambas Village serves as a vital center for wildlife protection and eco-tourism, attracting visitors and researchers from around the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
 
 @endsection

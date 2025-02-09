@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Pengumuman;
+use App\Models\Sponsor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -124,5 +125,75 @@ class DashboardAdminController extends Controller
         $pendaftar = User::all();
 
         return view('dashboard.pendaftarkkn', compact('pendaftar'));
+    }
+
+    public function sponsor(){
+        $sponsor = Sponsor::all();
+
+        return view('dashboard.sponsor', compact('sponsor'));
+    }
+
+    public function createSponsor(){
+        return view('dashboard.createsponsor');
+    }
+
+    public function storeSponsor(Request $request){
+        $request->validate([
+            'nama_sponsor' => 'required',
+            'link_website' => 'nullable',
+            'image' => 'required|image',
+        ]);
+
+        $sponsor = new Sponsor;
+        $sponsor->nama_sponsor = $request->nama_sponsor;
+        $sponsor->link_website = $request->link_website;
+
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('sponsor', 'public');
+            $sponsor->image = $imagePath;
+        } else {
+            $sponsor->image = null;
+        }
+
+        $sponsor->save();
+
+        return redirect()->route('sponsor.index')->with('success', 'Sponsor created successfully!');
+    }
+
+    public function editSponsor($id)
+    {
+        $sponsor = Sponsor::findOrFail($id);
+        return view('dashboard.editsponsor', compact('sponsor'));
+    }
+
+    public function updateSponsor(Request $request, $id)
+    {
+        $request->validate([
+            'nama_sponsor' => 'required',
+            'link_website' => 'nullable',
+            'image' => 'nullable|image',
+        ]);
+
+       $sponsor = Sponsor::findOrFail($id);
+       $sponsor->nama_sponsor = $request->nama_sponsor;
+       $sponsor->link_website = $request->link_website;
+
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('images', 'public');
+           $sponsor->image = $imagePath;
+        }
+
+       $sponsor->save();
+
+        return redirect()->route('sponsor.index')->with('success', 'Sponsor updated successfully!');
+    }
+
+
+    public function deleteSponsor($id)
+    {
+        $sponsor = Sponsor::findOrFail($id);
+        $sponsor->delete();
+
+        return redirect()->route('sponsor.index')->with('success', 'Sponsor deleted successfully!');
     }
 }

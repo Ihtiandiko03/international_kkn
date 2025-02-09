@@ -192,6 +192,32 @@
             width: 100%;
             object-fit: cover;
         }
+
+        #sponsor img {
+            /* filter: grayscale(90%); */
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+        
+        #sponsor img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        
+        #sponsor a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        #sponsor a:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
     </style>
 </head>
 <body>
@@ -251,5 +277,46 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Load YouTube API
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-player', {
+                // Replace VIDEO_ID with your YouTube video ID
+                videoId: 'VIDEO_ID', 
+                playerVars: {
+                    autoplay: 1,
+                    loop: 1,
+                    controls: 0,
+                    showinfo: 0,
+                    autohide: 1,
+                    modestbranding: 1,
+                    mute: 1,
+                    playlist: 'VIDEO_ID' // Required for looping
+                },
+                events: {
+                    onReady: onPlayerReady,
+                    onStateChange: onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            event.target.playVideo();
+            event.target.mute();
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.ENDED) {
+                player.playVideo();
+            }
+        }
+    </script>
 </body>
 </html>

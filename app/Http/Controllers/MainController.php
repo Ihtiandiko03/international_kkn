@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Sponsor;
 use App\Models\Pengumuman;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -10,7 +11,8 @@ use Illuminate\Support\Facades\Hash;
 class MainController extends Controller
 {
     public function index(){
-        return view('index');
+        $sponsor = Sponsor::all();
+        return view('index', compact('sponsor'));
     }
     public function struktur(){
         return view('struktur');

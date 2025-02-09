@@ -31,5 +31,13 @@ Route::get('/dashboard/pengumuman/{id}', [DashboardAdminController::class, 'show
 Route::put('/dashboard/pengumuman/{id}', [DashboardAdminController::class, 'updatePengumuman'])->name('pengumuman.update');
 Route::delete('/dashboard/pengumuman/{id}', [DashboardAdminController::class, 'deletePengumuman'])->name('pengumuman.delete');
 
+Route::get('/dashboard/sponsor', [DashboardAdminController::class, 'sponsor'])->name('sponsor.index');
+Route::get('/dashboard/createsponsor', [DashboardAdminController::class, 'createSponsor'])->name('sponsor.create');
+Route::post('/dashboard/storesponsor', [DashboardAdminController::class, 'storeSponsor'])->name('sponsor.store');
+
+Route::get('/dashboard/sponsor/{id}/edit', [DashboardAdminController::class, 'editSponsor'])->name('sponsor.edit');
+Route::put('/dashboard/sponsor/{id}', [DashboardAdminController::class, 'updateSponsor'])->name('sponsor.update');
+Route::delete('/dashboard/sponsor/{id}', [DashboardAdminController::class, 'deleteSponsor'])->name('sponsor.delete');
+
 Route::get('/dashboard/pendaftar-kkn', [DashboardAdminController::class, 'pendaftarKKN'])->name('pendaftar-kkn.index');
 

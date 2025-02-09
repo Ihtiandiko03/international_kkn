@@ -68,6 +68,12 @@
                 <p>Announcement</p>
             </a>
         </li>
+        <li class="{{ Request::is('dashboard/sponsor') ? 'active' : '' }}">
+            <a href="/dashboard/sponsor">
+                <i class="now-ui-icons business_money-coins"></i>
+                <p>Sponsorship</p>
+            </a>
+        </li>
           {{-- <li>
             <a href="/icons">
               <i class="now-ui-icons education_atom"></i>
