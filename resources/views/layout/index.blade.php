@@ -288,8 +288,8 @@
         var player;
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('youtube-player', {
-                // Replace VIDEO_ID with your YouTube video ID
-                videoId: 'VIDEO_ID', 
+
+                videoId: 'HS_RPLa5gPw', 
                 playerVars: {
                     autoplay: 1,
                     loop: 1,
@@ -298,7 +298,7 @@
                     autohide: 1,
                     modestbranding: 1,
                     mute: 1,
-                    playlist: 'VIDEO_ID' // Required for looping
+                    playlist: 'HS_RPLa5gPw'
                 },
                 events: {
                     onReady: onPlayerReady,
@@ -308,6 +308,7 @@
         }
 
         function onPlayerReady(event) {
+            event.target.setPlaybackQuality('hd1080'); 
             event.target.playVideo();
             event.target.mute();
         }

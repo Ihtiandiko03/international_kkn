@@ -372,7 +372,7 @@
                 <div class="col-md-6">
                     <div style="position: relative;">
                         <img src="https://i.pinimg.com/736x/83/5f/f7/835ff715a2d628d1f5e4f6d03873a07c.jpg" class="card-img-top" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.010215124!2d105.105!3d-5.675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNDAnMzAiUyAxMDXCsDA2JzAwIkU!5e0!3m2!1sen!2sid!4v1700000000000" style="width: 100%; height: 300px; border-radius: 10px; margin-top: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19541.02314116337!2d105.22618090646887!3d-5.678462083549218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41255795f62817%3A0x61315f106afd2eb5!2sDesa%20Wisata%20Pulau%20Pahawang!5e1!3m2!1sid!2sid!4v1739154736170!5m2!1sid!2sid" style="width: 100%; height: 300px; border-radius: 10px; margin-top: 10px;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
@@ -401,7 +401,7 @@
                 <div class="col-md-6">
                     <div style="position: relative; float: right;">
                         <img src="https://i.pinimg.com/736x/d0/be/5a/d0be5a1625a28d6d9ffbc9f67c36769f.jpg" class="card-img-top" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.010215124!2d105.308!3d-5.301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMTcnNTQiUyAxMDXCsDE4JzI4IkU!5e0!3m2!1sen!2sid!4v1700000000000" style="width: 100%; height: 300px; border-radius: 10px; margin-top: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19551.152191765254!2d105.64098246273743!3d-5.371508315546296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40fa6bc4e0108b%3A0x5ee102154baebe9b!2sBalai%20Desa%20Girimulyo!5e1!3m2!1sid!2sid!4v1739154865119!5m2!1sid!2sid" style="width: 100%; height: 300px; border-radius: 10px; margin-top: 10px;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
@@ -411,7 +411,7 @@
                 <div class="col-md-6">
                     <div style="position: relative;">
                         <img src="https://i.pinimg.com/736x/97/55/be/9755be30cd3b9fdd4ef51bc17b92dd0c.jpg" class="card-img-top" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.010215124!2d105.645!3d-4.928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTUnNDYiUyAxMDXCsDM4JzQxIkU!5e0!3m2!1sen!2sid!4v1700000000000" style="width: 100%; height: 300px; border-radius: 10px; margin-top: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4891.202201767585!2d105.77435337585503!3d-4.927570450449653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40813cf143bc13%3A0x4c426b2efc4681a3!2sTaman%20Nasional%20Way%20Kambas!5e1!3m2!1sid!2sid!4v1739154933424!5m2!1sid!2sid" style="width: 100%; height: 300px; border-radius: 10px; margin-top: 10px;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
