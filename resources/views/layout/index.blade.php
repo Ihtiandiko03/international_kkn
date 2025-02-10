@@ -234,7 +234,7 @@
                     <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="/struktur">Committees</a></li>
                     <li class="nav-item"><a class="nav-link" href="/pengumuman">Announcement</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#timeline">Sponsorship</a></li>
+                    {{-- <li class="nav-item"><a class="nav-link" href="#timeline">Sponsorship</a></li> --}}
                     <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
                 </ul>
             </div>
